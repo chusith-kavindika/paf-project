@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8080/api/workplans';
+const API_URL = 'http://localhost:8080/api/workplans'; // Ensure this matches the backend URL
 
 export const getAllWorkplans = () => axios.get(API_URL);
 export const getWorkplanById = (id) => axios.get(`${API_URL}/${id}`);

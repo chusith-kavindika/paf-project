@@ -1,42 +1,66 @@
 /* src/styles/WorkplanForm.css */
 .workplan-form-container {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .workplan-form-header {
-    padding: 16px 24px;
-    border-bottom: 1px solid #f1f1f1;
-  }
-  
-  .workplan-form-header h2 {
-    margin: 0;
-  }
-  
-  .workplan-form-body {
-    padding: 24px;
-  }
-  
-  .form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-  }
-  
-  .form-actions {
-    display: flex;
-    justify-content: flex-end;
-    gap: 12px;
-    margin-top: 24px;
-  }
-  
-  @media (max-width: 768px) {
-    .form-row {
-      grid-template-columns: 1fr;
-    }
-  }
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.workplan-form-header {
+  padding: 16px 24px;
+  border-bottom: 2px solid #f1f1f1;
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px 8px 0 0;
+}
+
+.workplan-form-header h2 {
+  margin: 0;
+}
+
+.workplan-form-body {
+  padding: 24px;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.form-actions button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.form-actions .btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.form-actions .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.form-actions .btn-secondary {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+}
+
+.form-actions .btn-secondary:hover {
+  background-color: #5a6268;
+}
